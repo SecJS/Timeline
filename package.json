@@ -1,6 +1,6 @@
 {
   "name": "@secjs/timeline",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "repository": "https://github.com/secjs/timeline",
   "author": "João Lenon <lenonsec7@gmail.com>",
   "license": "MIT",
@@ -36,9 +36,7 @@
   "main": "build/",
   "types": "build/",
   "files": [
-    "build",
-    "build/typeorm/index.d.ts",
-    "build/typeorm/index.js"
+    "build"
   ],
   "dependencies": {
     "reflect-metadata": "^0.1.13",

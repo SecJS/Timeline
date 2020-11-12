@@ -8,9 +8,10 @@
     "allowSyntheticDefaultImports": true,
     "target": "es2017",
     "sourceMap": true,
-    "outDir": "./build",
-    "baseUrl": ".",
+    "outDir": "build",
+    "rootDir": "./src/",
     "incremental": true,
-    "resolveJsonModule": true
-  }
+    "resolveJsonModule": true,
+  },
+  "exclude": ["node_modules", "test", "dist", "**/*spec.ts"]
 }

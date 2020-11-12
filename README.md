@@ -36,5 +36,5 @@ import {
 } from '@secjs/timeline/typeorm'
 
 // Now you just need to run the migrations inside @secjs/timeline/typeorm and create a timeline using all the stuffs
-const timeline = await this.timelineRepository(createTimelineDto)
+const timeline = await this.timelineRepository(createTimelineDto: CreateTimelineDto)
 ```

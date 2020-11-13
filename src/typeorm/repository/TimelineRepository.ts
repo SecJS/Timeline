@@ -2,12 +2,11 @@ import { Timeline } from '../model/Timeline'
 import { EntityRepository, Repository } from 'typeorm'
 import { CreateTimelineDto } from '../dto/CreateTimelineDto'
 import { TimelineMethodEnum } from '../enum/TimelineMethodEnum'
-import { TimelineCauserEnum } from '../enum/TimelineCauserEnum'
 
 @EntityRepository(Timeline)
 export class TimelineRepository extends Repository<Timeline> {
   public async getFullTimelines(
-    causer_type: TimelineCauserEnum,
+    causer_type: string,
     method?: TimelineMethodEnum,
   ): Promise<Timeline[]> {
     return this.find({ causer_type, method })

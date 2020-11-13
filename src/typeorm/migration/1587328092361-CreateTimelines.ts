@@ -34,9 +34,7 @@ export default class CreateTimelines1587328092361 implements MigrationInterface 
           },
           {
             name: 'causer_type',
-            type: 'enum',
-            enum: ['user', 'admin', 'driver', 'seller', 'client', 'customer', 'beneficiary'],
-            enumName: 'timelineCauserEnum',
+            type: 'varchar',
           },
           {
             name: 'model_id',

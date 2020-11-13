@@ -1,5 +1,4 @@
 import { TimelineMethodEnum } from '../enum/TimelineMethodEnum'
-import { TimelineCauserEnum } from '../enum/TimelineCauserEnum'
 
 export class CreateTimelineDto {
     name: string
@@ -10,7 +9,7 @@ export class CreateTimelineDto {
 
     causer_id: string
 
-    causer_type: TimelineCauserEnum
+    causer_type: string
 
     model_id?: string
 

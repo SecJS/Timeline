@@ -6,7 +6,6 @@ import {
     PrimaryGeneratedColumn,
 } from 'typeorm'
 import { TimelineMethodEnum } from '../enum/TimelineMethodEnum'
-import { TimelineCauserEnum } from '../enum/TimelineCauserEnum'
 
 @Entity('timelines')
 export class Timeline {
@@ -31,10 +30,9 @@ export class Timeline {
     causer_id: string
 
     @Column({
-        type: 'enum',
-        enum: TimelineCauserEnum,
+        nullable: false
     })
-    causer_type: TimelineCauserEnum
+    causer_type: string
 
     @Column()
     model_id: string

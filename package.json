@@ -1,6 +1,6 @@
 {
   "name": "@secjs/timeline",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "repository": "https://github.com/secjs/timeline",
   "author": "João Lenon <lenonsec7@gmail.com>",
   "license": "MIT",
@@ -31,15 +31,14 @@
     "eslint-plugin-promise": "^4.2.1",
     "eslint-plugin-standard": "^4.0.0",
     "prettier": "^1.19.1",
-    "tsconfig-paths": "^3.9.0"
+    "tsconfig-paths": "^3.9.0",
+    "reflect-metadata": "^0.1.13",
+    "typeorm": "^0.2.29"
   },
   "main": "build/",
   "types": "build/",
   "files": [
-    "build", "typeorm"
+    "build", "typeorm", "src"
   ],
-  "dependencies": {
-    "reflect-metadata": "^0.1.13",
-    "typeorm": "^0.2.29"
-  }
+  "dependencies": {}
 }
